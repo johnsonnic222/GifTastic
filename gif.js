@@ -46,26 +46,12 @@
   $("#run-search").on("click", function(event) {
     event.preventDefault();
   
-    // Initially sets the articleCounter to 0
-    //articleCounter = 0;
   
-    // Empties the region associated with the articles
-    //$("#addHere").empty();
-  
-    // Grabbing text the user typed into the search input
     searchTerm = $("#search-term").val().trim();
     var searchURL = queryURLBase + searchTerm;
   
-    // Number of results the user would like displayed
-    //numResults = $("#addedMovie").val();
   
-    // Then we will pass the final searchURL and the number of results to
-    // include to the runQuery function
     runQuery("_", searchURL);
   });
-  
-  // This button clears the top articles section
-  $("#clear-all").on("click", function() {
-    $("#addHere").empty();
- });
+
 }
