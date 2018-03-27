@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+<head>
+    <title>Employee Data Management Design</title>
+</head>
+
+<body>
+    <div class="wrapper"></div>
+    <div class="container">
+        <div class="jumbotron" style="background-color:purple; color:whitesmoke;">
+            <div class=" containier ">
+                <h1 class="text-center ">
+                    <strong>GIFTASTIC</strong>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Movies</h3>
+                    </div>
+                    <div class="panel-body" id="addHere">
+                        <button class="gif" data-state="still" data-movies="Dirty Dancing">Dirty Dancing</button>
+                        <button class="gif" data-state="still" data-movies="Breakfast Club">Beakfast Club</button>
+                        <button class="gif" data-state="still" data-movies="White Chicks">White Chicks</button>
+                        <button class="gif" data-state="still" data-movies="The Hangover">The Hangover</button>
+                        <button class="gif" data-state="still" data-movies="Die Hard">Die Hard</button>
+                        <button class="gif" data-state="still" data-movies="Wonder Woman">Wonder Woman</button>
+                        <button class="gif" data-state="still" data-movies="Black Panther">Black Panther</button>
+                        <button class="gif" data-state="still" data-movies="Twister">Twister</button>
+                        <button class="gif" data-state="still" data-movies="Harry Potter">Harry Potter</button>
+                        <button class="gif" data-state="still" data-movies="The Gladiator ">The Gladiator</button>
+                        <button class="gif" data-state="still" data-movies="Titanic">Titanic</button>
+                        <button class="gif" data-state="still" data-movies="10 Things I hate about you">10 Things I hate about you</button>
+                        <button class="gif" data-state="still" data-movies="The Notebook">The Notebook</button>
+                        <button class="gif" data-state="still" data-movies="Lord of the Rings">Lord of the Rings</button>
+                        <button class="gif" data-state="still" data-movies="Star Wars">Star Wars</button>
+                        <button class="gif" data-state="still" data-movies="Zoolander">Zoolander</button>
+                        <button class="gif" data-state="still" data-movies="The Lion King">The Lion King</button>
+                        <div id="gifs">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"> Add a Movie!</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="search-term">
+                                    </div>
+                                    <button type="submit" class="btn btn-default" id="run-search"> Search</button>
+
+                            </div>
+                            <button type="button" class="btn btn-default" id="clear-all">
+                                Clear Results</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+                <script src="gif.js"></script>
+</body>
+
+</html>
